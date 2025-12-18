@@ -1,0 +1,35 @@
+:root{
+    --main-color:rgb(84 198 84);
+    --bg-main: rgb(231 247 231)
+}
+
+.navLink{
+    font-size: 17px;
+    /* color: #777; */
+        border-radius: 8px;
+        padding: 8px 20px;
+        transition: 0.5s;
+}
+.active{
+    background-color:var(--bg-main);
+    color:var(--main-color);
+}
+.navLink:hover{
+    background-color:var(--bg-main);
+    color:var(--main-color);
+}
+.nav-link.active{
+background-color:var(--bg-main);
+    color:var(--main-color);
+}
+.icons{
+    font-size: 19px ;
+    cursor: pointer;
+    color: #777;
+}
+.icons:hover{
+    color:var(--main-color);
+}
+.logOut:hover{
+color: red;
+}

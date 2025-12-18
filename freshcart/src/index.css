@@ -1,0 +1,24 @@
+:root{
+  --main-color:#56c21b;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+.slick-dots li.slick-active button:before {
+  color: var(--main-color) !important;
+}
+
+.slick-dots li button  {
+    cursor: pointer;
+    color: var(--main-color) !important;
+}
+.slick-prev, .slick-next,.slick-nex:focus,.slick-prev{
+/* background: #56c21b !important; */
+color: green !important;
+}
+.slick-prev:before, .slick-next:before{
+  color: var(--main-color) !important;
+  opacity: 1 !important;
+}

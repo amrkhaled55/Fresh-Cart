@@ -1,0 +1,48 @@
+.add , .less{
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #fff;
+    margin:5px;
+    cursor: pointer;
+}
+.theContat span:first-of-type{
+    color: var(--main-color);
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-block: 7px;
+}
+.theContat .ico{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--bg-main);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.theContat i{
+    color: var(--main-color);
+    font-size: 20px; 
+    cursor: pointer;
+}
+.theContat i small:hover{
+    opacity:0.8;
+    color:var(--main-color) !important;
+    cursor: pointer;
+}
+.emptyBtn{
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    padding: 8px 14px;
+    color: #fff;
+}
