@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { contextCart } from "../CartContext/CartContext";
 import styleCart from './cart.module.css'
 import toast from "react-hot-toast";
@@ -6,8 +6,10 @@ import Img from '../../assets/images/emptyCart.jpg'
 import { Link } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
 export default function Cart() {
-   const{deleteProduct,updateProduct,cartItems,cartProduct,totalPrice,removeItem}= useContext(contextCart);
-
+   const{deleteProduct,updateProduct,getProducts,cartProduct,totalPrice,removeItem}= useContext(contextCart);
+useEffect(() => {
+  getProducts();
+}, []);
   async function deleteCart(productId){
 const toastId = toast.loading("Deleting Your Product");
     const res= await deleteProduct(productId);

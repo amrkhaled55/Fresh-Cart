@@ -92,7 +92,8 @@ getProducts();
         removeItem,
         setCartProduct,
         cartId,
-        setCartItems
+        setCartItems,
+        getProducts
     }}> 
     
     {children}

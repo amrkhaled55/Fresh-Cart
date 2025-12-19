@@ -1,11 +1,14 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { wishContext } from "../WishListContext/WishListContext";
 import { TailSpin } from "react-loader-spinner";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 export default function WishList() {
-  const {wishList,deleteWishList,setCountWish,setwishList} = useContext(wishContext);
+  const {wishList,deleteWishList,setCountWish,setwishList,getWishLists} = useContext(wishContext);
+  useEffect(()=>{
+    getWishLists()
+  },[])
   if(wishList===null){
     return <div className="d-flex flex-column justify-content-center  align-items-center vh-100 bg-black bg-opacity-50 position-absolute w-100">
     <TailSpin
