@@ -7,7 +7,6 @@ import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import {  Rings } from 'react-loader-spinner';
 import { theContext } from '../AthunicatContext/AthunticatContext';
-import { Helmet } from 'react-helmet-async';
 export default function Login() {
 const[loader,setLoader]= useState(false);
 const navigate=useNavigate();
@@ -62,9 +61,6 @@ return errors
 
   return (
     <>
-     <Helmet>
-    <title>Login</title>
-  </Helmet>
       <div className={loginCss.formWrapper + " shadow-lg bg-white mx-auto mt-5"}>
         <div className="container">
           <div className="row gy-4 align-items-center">

@@ -7,7 +7,6 @@ import { contextCart } from "../CartContext/CartContext";
 import { useContext, useState } from "react";
 import toast from "react-hot-toast";
 import { wishContext } from "../WishListContext/WishListContext";
-import { Helmet } from "react-helmet-async";
 export default function Products() {
   const {addToCart} = useContext(contextCart);
   const{setCountWish,getWishLists} = useContext(wishContext);
@@ -63,9 +62,6 @@ wrapperClass=""
     </div>
 }
   return <>
-   <Helmet>
-    <title>Products</title>
-  </Helmet>
 <div className=" p-5  mt-5">
   <h3  className="text-center mb-3 h2"> Products </h3>
     <input  style={{maxWidth:"550px"}}  onChange={(e)=>setTerm(e.target.value)} id="inputSearch" type="text" className="form-control   w-100 w-sm-50 mx-auto my-4" placeholder="Search by Product Name" />

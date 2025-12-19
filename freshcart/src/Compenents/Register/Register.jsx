@@ -6,7 +6,6 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import {  Rings } from 'react-loader-spinner';
-import { Helmet } from 'react-helmet-async';
 export default function Register() {
 const[loader,setLoader]= useState(false);
 const navigate=useNavigate()
@@ -76,9 +75,6 @@ return errors
 })
   return (
     <>
-     <Helmet>
-    <title>Register</title>
-  </Helmet>
       <div className={registerCss.formWrapper + " shadow-lg bg-white mx-auto mt-3"}>
         <div className="container">
           <div className="row gy-4 align-items-center">

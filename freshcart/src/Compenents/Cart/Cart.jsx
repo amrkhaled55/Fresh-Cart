@@ -5,7 +5,6 @@ import toast from "react-hot-toast";
 import Img from '../../assets/images/emptyCart.jpg'
 import { Link } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
-import { Helmet } from "react-helmet-async";
 export default function Cart() {
    const{deleteProduct,updateProduct,cartItems,cartProduct,totalPrice,removeItem}= useContext(contextCart);
 
@@ -60,9 +59,6 @@ wrapperClass=""
     </div>
    }
   return <>
-   <Helmet>
-    <title>Cart</title>
-  </Helmet>
     <div style={{backgroundColor:"#F8F9FA" ,borderRadius:"10px"}} className="container mt-4 py-3">
 
                  <div className="theHeader d-flex justify-content-between mx-4 ">

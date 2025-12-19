@@ -5,7 +5,6 @@ import catagoryStyle from "./category.module.css"
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import errorImg from "../../assets/images/error.svg"
-import { Helmet } from "react-helmet-async";
 export default function Categories() {
   const [term,setTerm] =useState("");
   function getAllCategories(){
@@ -42,9 +41,6 @@ if(isError){
     </>
 }
   return <>
-   <Helmet>
-    <title>Categories</title>
-  </Helmet>
   <div className="container">
       <h3 className="text-center my-3 h2">Categories</h3>
       <input  style={{maxWidth:"550px"}}  onChange={(e)=>setTerm(e.target.value)} type="text" className="form-control   mx-auto my-4"

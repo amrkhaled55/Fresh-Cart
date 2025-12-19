@@ -12,7 +12,6 @@ import { contextCart } from './../CartContext/CartContext';
 import toast from "react-hot-toast";
 import { wishContext } from "../WishListContext/WishListContext";
 import errorImg from "../../assets/images/error.svg"
-import { Helmet } from "react-helmet-async";
 export default function Home() {
 const {addToCart} = useContext(contextCart);
 const [term,setTerm]=useState("");
@@ -79,9 +78,6 @@ if(isError){
     </>
 }
   return <>
-  <Helmet>
-    <title>Home</title>
-  </Helmet>
 <div className="container-fluid mt-3">
   <div className="row gx-0 gy-4">
     <div className="col-md-9">
@@ -120,9 +116,9 @@ return  <div className="col-12 col-md-4 col-lg-3"key={idx} >
            <span > {pro.ratingsAverage}</span>
        </div>
       <div className={homeStyle.layerIcons}>
-  <i  onClick={()=>addWishList(pro._id)} className={"fa-solid fa-heart " + homeStyle.heart}></i>
-  <Link onClick={()=>addProduct(pro._id)}> <i className={"fa-solid fa-cart-shopping " + homeStyle.cart}></i></Link>
-<Link  to={`/productDetails/${pro.id}`}>  <i className={"fa-solid fa-eye " + homeStyle.view}></i></Link>
+  <i  title="add to WishList" onClick={()=>addWishList(pro._id)} className={"fa-solid fa-heart " + homeStyle.heart}></i>
+  <Link title="Add to cart" onClick={()=>addProduct(pro._id)}> <i className={"fa-solid fa-cart-shopping " + homeStyle.cart}></i></Link>
+<Link  title="view details" to={`/productDetails/${pro.id}`}>  <i className={"fa-solid fa-eye " + homeStyle.view}></i></Link>
 </div>
       </div>
       </div>

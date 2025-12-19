@@ -4,7 +4,6 @@ import { useState } from "react";
 import { TailSpin } from "react-loader-spinner";
 import { Link } from "react-router-dom";
 import errorImg from "../../assets/images/error.svg"
-import { Helmet } from "react-helmet-async";
 export default function Brands() {
  const [term,setTerm] =useState("");
   function getBrands(){
@@ -41,9 +40,6 @@ if(isError){
     </>
 }
   return <>
-   <Helmet>
-      <title>Brands</title>
-    </Helmet>
     <div className="container">
       <h3 className="text-center my-3 h2">Brands</h3>
       <input  style={{maxWidth:"550px"}}  onChange={(e)=>setTerm(e.target.value)} type="text" className="form-control  w-100 w-sm-50 mx-auto my-4" placeholder="search by brand name"/>

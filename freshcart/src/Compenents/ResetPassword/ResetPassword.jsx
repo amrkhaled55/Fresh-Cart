@@ -7,7 +7,6 @@ import { Rings } from 'react-loader-spinner';
 import { theContext } from '../AthunicatContext/AthunticatContext';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { Helmet } from 'react-helmet-async';
 export default function ResetPassword() {
   const { setToken } = useContext(theContext);
 
@@ -56,9 +55,6 @@ setLoader(false)
       }
     })
   return     <>
-   <Helmet>
-    <title>Reset Password</title>
-  </Helmet>
       <div className={resetStyle.formWrapper + " shadow-lg bg-white mx-auto mt-5"}>
         <div className="container">
           <div className="row gy-4 align-items-center">
