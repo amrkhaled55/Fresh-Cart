@@ -103,7 +103,7 @@ return errors
 <small className='text-danger fw-bold'>{myFormik.errors && myFormik.touched.password? myFormik.errors.password :" "}</small>
               </div>
 <div className='d-flex align-items-center'>
-  <Link to="/forgetpassword" style={{color:"#56c21b",fontSize:"18px"}} >Forget Password ?</Link>
+  <Link to="/forgetpassword" style={{color:"#56c21b",fontSize:"16px"}} >Forget Password ?</Link>
 <button 
   disabled={!(myFormik.isValid && myFormik.dirty)} 
   type="submit"

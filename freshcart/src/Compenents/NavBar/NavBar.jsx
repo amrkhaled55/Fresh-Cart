@@ -73,7 +73,7 @@ export default function NavBar() {
             {token ? (
               <>
                 {/* Wishlist */}
-                <li className="nav-item ms-4 me-2 mt-1 mb-lg-1 mb-2">
+                <li className="nav-item ms-4 me-3 mt-1 mb-lg-1 mb-2">
                   <NavLink to="/wishlist">
                     <i className={`${styleNavBar.icons} fa-solid fa-heart position-relative`}>
                       <span style={{fontSize:"12px"}} className="badge bg-success position-absolute top-0 start-100 translate-middle px-2 py-1">
@@ -84,7 +84,7 @@ export default function NavBar() {
                 </li>
 
                 {/* Cart */}
-                <li className="nav-item ms-4 me-2   mb-lg-1 mb-2">
+                <li className="nav-item ms-4 me-3   mb-lg-1 mb-2">
                   <NavLink to="/cart">
                     <i className={`${styleNavBar.icons} fa-solid fa-cart-shopping position-relative`}>
                       <span style={{fontSize:"12px"}} className="badge bg-success position-absolute top-0 start-100 translate-middle px-2 py-1">
