@@ -1,5 +1,5 @@
 import { useFormik } from 'formik';
-import resetStyle from './resetpassword.module.css' 
+import resetStyle from './resetPassword.module.css' 
 import { Link, useNavigate } from 'react-router-dom';
 import resetImg from '../../assets/images/signin-g.svg'
 import { useContext, useState } from 'react';
